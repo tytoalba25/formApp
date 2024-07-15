@@ -29,6 +29,7 @@ for i in players:
     plus_minus.append(i.find_all('td')[8].text.strip())
     
 st.title("Hockey Data")
+st.header("Stats for NHL Teams")
 
 data = pd.DataFrame({"Team Name":name,
                      "Year":year,
