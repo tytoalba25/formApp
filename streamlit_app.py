@@ -28,6 +28,8 @@ for i in players:
     goals_against.append(i.find_all('td')[7].text.strip())
     plus_minus.append(i.find_all('td')[8].text.strip())
     
+st.title("Hockey Data")
+
 data = pd.DataFrame({"Team Name":name,
                      "Year":year,
                      "Wins":wins,
