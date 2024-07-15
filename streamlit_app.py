@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-webpage = requests.get(f'https://www.scrapethissite.com/pages/forms/').text
+webpage = requests.get(f'https://www.scrapethissite.com/pages/forms/?per_page=600').text
 soup = BeautifulSoup(webpage, 'lxml')
 players = soup.find_all('tr')[1:]
 #print(players)
